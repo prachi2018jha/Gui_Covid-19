@@ -33,11 +33,11 @@ def plotdata():
             percap[country] = percap[country]/populations[country]*100000
         #Generating Colours 
         colors={}
-        j=0
+        k=0
         col = ['#045275', '#089099' ,'#DC3977', '#7C1D6F','#7CCBA2'] 
         for i in countries:
-            colors[i]=col[j]
-            j+=1
+            colors[i]=col[k]
+            k+=1
         plt.style.use('fivethirtyeight')
         percapplot = percap.plot(figsize=(12,8), color=list(colors.values()), linewidth=5, legend=False)
         percapplot.grid(color='#d4d4d4')
